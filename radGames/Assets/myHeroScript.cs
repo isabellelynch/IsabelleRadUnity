@@ -33,7 +33,7 @@ public class myHeroScript : MonoBehaviour
             transform.position -= runningSpeed * transform.right * Time.deltaTime;
         }
 
-        if (Input.GetKey(KeyCode.Space))
+        if (Input.GetKey(KeyCode.Q))
         {
             transform.position += runningSpeed * transform.up * Time.deltaTime;
         }

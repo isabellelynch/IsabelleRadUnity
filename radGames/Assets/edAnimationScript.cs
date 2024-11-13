@@ -15,10 +15,14 @@ public class edAnimationScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        edAnimator.SetBool("isWalking", false);
+
         if(Input.GetKey(KeyCode.W))
         { //make ed walk in animations and move forward
             edAnimator.SetBool("isWalking", true);
             transform.position += speed * transform.forward * Time.deltaTime;
           }
     }
+ 
+    
 }
